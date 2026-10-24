@@ -1,0 +1,159 @@
+/***
+
+====================================================================
+    Clients Section
+====================================================================
+
+***/
+
+.clients-section{
+    position: relative;
+    padding: 100px 0;
+    @include media-breakpoint-down(lg){
+        padding: 50px 0 50px;
+    }
+}
+
+// Client Block
+.client-block {
+    .inner-box {
+        &:hover {
+            .image-box {
+                .image {
+                    img {
+                        opacity: 1;
+                        @include transition(all 300ms ease);
+                    }
+                }
+            }
+        }
+        .image-box {
+            .image {
+                text-align: center;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                img {
+                    opacity: .6;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Clients Section Two
+====================================================================
+
+***/
+
+.clients-section-two {
+    position: relative;
+    padding: 100px 0 70px;
+    z-index: 3;
+}
+/*** 
+
+====================================================================
+    Clients Section Two
+====================================================================
+
+***/
+
+.clients-section-three {
+    position: relative;
+    .sponsors-outer {
+        padding: 0;
+    }
+}
+
+.client-block-three {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0, 10%);
+    border-right: 1px solid rgb(0, 0, 0, 10%);
+    .image {
+        position: relative;
+        padding: 20px 20px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 0;
+        min-height: 200px;
+        @include flex-center;
+        @include transition(all 300ms ease);
+        &:hover{
+            img {
+                opacity: 1;
+                &:first-child{
+                    transform: translateY(0) scaleY(1);
+                    opacity: 1;
+                    filter: blur(0);
+                }
+                &:nth-child(2){
+                    transform: translateY(-50%) scaleY(2);
+                    opacity: 0;
+                    filter: blur(10px);
+                }
+            }
+        }
+    }
+    img{
+        position:relative;
+        width: auto !important;
+        display: inline-block !important;
+        opacity: 30%;
+        @include transition(all 500ms ease);
+        &:first-child{
+            position:absolute;
+            left:0px;
+            right:0px;
+            top:0px;
+            bottom:0px;
+            z-index:1;
+            margin: auto;
+            transform: translateY(50%) scaleY(2);
+            opacity: 0;
+            filter: blur(10px);
+        }
+    }
+}
+
+.clients-carousel-two {
+  position: relative;
+  .client-item {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .client-item {
+    a{
+      display: block;
+      padding: 35px 0;
+      position: relative;
+      transition: all 300ms ease;
+      &.active {
+        background-color: #ebeef5;
+      }
+    }
+    img {
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+      opacity: 0.2;
+      transition: all 0.3s ease;
+      width: auto;
+    }
+    &:hover{
+      img {
+        transform: rotateY(360deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/***
+
+====================================================================
+    Process Section
+====================================================================
+
+***/
+
+.process-section {
+    position: relative;
+    padding: 120px 0 50px;
+    .bg {
+        &:before {
+            content: '';
+            @include overlay;
+            background-color: #232331;
+            opacity: .95;
+        }
+    }
+    .overlay-3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .icon-plane-9 {
+        position: absolute;
+        top: 40%;
+        left: -45px;
+        z-index: 3;
+        @include for-xxl{
+            display: none;
+        }
+    }
+    .float-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include for-xxl{
+            max-width: 30%;
+        }
+        @include media-breakpoint-down(xxl){
+            display: none;
+        }
+    }
+    .sec-title {
+        margin-bottom: 80px;
+    }
+}

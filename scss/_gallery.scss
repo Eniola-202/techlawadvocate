@@ -1,0 +1,99 @@
+/***
+
+==================================================================
+    Gallery Section
+==================================================================
+
+***/
+
+.gallery-section {
+    background-color: var(--theme-color3);
+    padding: 120px 0 0;
+    position: relative;
+}
+
+.gallery-block {
+    .inner-box {
+        .image-box {
+            align-items: center;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            &:hover {
+                .image {
+                    &:before {
+                        transform: scale(1);
+                    }
+                    a {
+                        img {
+                            transform: scale(1.15);
+                        }
+                    }
+                }
+                .popup-content {
+                    transform: scale(1);
+                }
+            }
+            .image {
+                margin-bottom: 0;
+                overflow: hidden;
+                width: 100%;
+                &:before {
+                    background-color: rgba(0, 0, 0, 0.8);
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    transform: scale(0);
+                    pointer-events: none;
+                    z-index: 1;
+                    @include transition(all 500ms ease);
+                }
+                a {
+                    img {
+                        width: 100%;
+                        @include transition(all 500ms ease);
+                    }
+                }
+            }
+            .popup-content {
+                align-items: center;
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                position: absolute;
+                transform: scale(0);
+                text-align: center;
+                width: 100%;
+                z-index: 2;
+                @include transition(all 500ms ease);
+                .title,
+                .text,
+                .price{
+                    color: var(--theme-color-light);
+                    display: block;
+                }
+                .title{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+                .text{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+                .price{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;                 
+                }
+            }
+        }
+    }
+}

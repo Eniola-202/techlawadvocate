@@ -1,0 +1,259 @@
+/*** 
+
+====================================================================
+    Fun Fact Section
+====================================================================
+
+***/
+
+.fun-fact-section {
+    position: relative;
+    padding: 0;
+}
+
+.counter-block {
+    position: relative;
+    margin-bottom: 50px;
+    @include media-breakpoint-down(md){
+        margin-bottom: 0;
+    }
+    .inner-box {
+        position: relative;
+        margin-bottom: 30px;
+        text-align: center;
+        @include transition(all 300ms ease);
+        &:hover {
+            .count-box {
+                color: var(--theme-color1);
+            }
+            .counter-title {
+                &:after {
+                   width: 100%; 
+                }
+            }
+        }
+    }
+    .content-box {
+        position: relative;
+    }
+    .count-box {
+        font-family: var(--title-font);
+        position: relative;
+        font-size: 120px;
+        line-height: 1;
+        color: var(--theme-color3);
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg){
+            font-size: 100px;
+        }
+    }
+
+    .counter-title {
+        color: var(--theme-color-dark);
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 0;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        transform: translateY(-60px);
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg){
+            transform: translateY(-50px);
+        }
+        &:before {
+            background-color: var(--theme-color1);
+            content: "";
+            height: 2px;
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            width: 100%;
+        }
+        &:after {
+            background-color: var(--theme-color2);
+            content: "";
+            height: 2px;
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            width: 0;
+            @include transition(all 300ms ease);
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Fun Fact Section Two
+====================================================================
+
+***/
+
+.fun-fact-section-two {
+    background-color: var(--theme-color2);
+    padding: 90px 0;
+    position: relative;
+    @include media-breakpoint-down(xl){
+        padding: 130px 0 50px;
+    }
+    @include media-breakpoint-down(lg){
+        padding: 0 0 50px;
+    }
+}
+
+.counter-block-two {
+    position: relative;
+    margin-bottom: 0;
+    .inner-box {
+        position: relative;
+        margin-bottom: 0;
+        text-align: center;
+        @include transition(all 300ms ease);
+        &:hover {
+            .count-box {
+                color: var(--theme-color1);
+            }
+            .counter-title {
+                &:after {
+                   width: 100%; 
+                }
+            }
+        }
+    }
+    .content-box {
+        position: relative;
+    }
+    .count-box {
+        color: var(--theme-color1);
+        font-family: var(--title-font);
+        font-size: 120px;
+        line-height: 1;
+        position: relative;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg){
+            font-size: 100px;
+        }
+    }
+
+    .counter-title {
+        color: var(--theme-color-dark);
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 0;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        transform: translateY(-60px);
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg){
+            transform: translateY(-50px);
+        }
+        &:before {
+            background-color: var(--theme-color1);
+            content: "";
+            height: 2px;
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            width: 100%;
+        }
+        &:after {
+            background-color: var(--theme-color2);
+            content: "";
+            height: 2px;
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            width: 0;
+            @include transition(all 300ms ease);
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Fun Fact Section Three
+====================================================================
+
+***/
+
+
+.fun-fact-section-three {
+    position: relative;
+    padding: 75px 0;
+    @include media-breakpoint-down(xl){
+    }
+    @include media-breakpoint-down(lg){
+    }
+    .auto-container{
+        max-width: 1400px;
+    }
+}
+.counter-block-three {
+    position: relative;
+    margin-bottom: 0;
+    .inner-box {
+        position: relative;
+        margin-bottom: 0;
+        text-align: center;
+        @include transition(all 300ms ease);
+        &:hover {
+            .count-box {
+                color: var(--theme-color1);
+            }
+            .counter-title {
+                &:after {
+                   width: 100%; 
+                }
+            }
+        }
+    }
+    .content-box {
+        position: relative;
+    }
+    .count-box {
+        color: rgba(0, 0, 0, 0.1);
+        font-family: var(--title-font);
+        font-size: 200px;
+        font-weight: 400;
+        line-height: 96px;
+        position: relative;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg){
+            font-size: 100px;
+        }
+    }
+    .counter-title {
+        color: var(--theme-color-dark);
+        display: inline-block;
+        font-family: var(--text-font);
+        font-size: 24px;
+        margin-bottom: 0;
+        position: relative;
+        transform: translate(90px, -45px);
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(xl){
+            transform: translate(60px, -45px);
+        }
+        @include media-breakpoint-down(sm){
+            transform: translate(0px, -45px);
+        }
+    }
+    
+    &:not(:last-child){
+        &:before{
+            background-color: #BFA888;
+            content: "";
+            height: 87px;
+            position: absolute;
+            right: -20px;
+            top: 35px;
+            width: 1px;
+        }
+    }
+}

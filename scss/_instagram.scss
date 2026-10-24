@@ -1,0 +1,70 @@
+/***
+
+==================================================================
+    Instagram Section
+==================================================================
+
+***/
+
+.instagram-section {
+    padding: 0;
+    position: relative;
+    @include media-breakpoint-down(md){
+    }
+    .carousel-outer{
+        margin: 0 -170px;
+    }
+    .instagram-block {
+        .inner-box {
+            .image-box {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                @include media-breakpoint-down(lg){
+                    margin-bottom: 25px;
+                }
+                &:hover {
+                    .image {
+                        a {
+                            img {
+                                transform: scale(1.15);
+                            }
+                        }
+                    }
+                    .icon {
+                        transform: scale(1) rotate(-45deg);
+                    }
+                }
+                .image {
+                    margin-bottom: 0;
+                    overflow: hidden;
+                    width: 100%;
+                    a {
+                        position: relative;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            @include transition(all 300ms ease);
+                        }
+                    }
+                }
+                .icon {
+                    background-color: var(--theme-color1);
+                    border-radius: 50%;
+                    color: var(--theme-color-light);
+                    font-size: 16px;
+                    height: 55px;
+                    line-height: 55px;
+                    position: absolute;
+                    pointer-events: none;
+                    transform: scale(0) rotate(-45deg);
+                    text-align: center;
+                    width: 55px;
+                    z-index: 2;
+                    @include transition(all 300ms ease);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+/*
+  Flaticon icon font: flaticon-law
+  Creation date: 02/12/2020 17:55
+*/
+
+@font-face {
+  font-family: "flaticon-law";
+  src: url("../fonts/flaticon-law.eot");
+  src: url("../fonts/flaticon-law.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon-law.woff2") format("woff2"),
+       url("../fonts/flaticon-law.woff") format("woff"),
+       url("../fonts/flaticon-law.ttf") format("truetype"),
+       url("../fonts/flaticon-law.svg#flaticon-law") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "flaticon-law";
+    src: url("../fonts/flaticon-law.svg#flaticon-law") format("svg");
+  }
+}
+
+[class^="flaticon-law-"]:before, [class*=" flaticon-law-"]:before,
+[class^="flaticon-law-"]:after, [class*=" flaticon-law-"]:after {   
+  font-family: flaticon-law;
+  font-style: normal;
+}
+
+.flaticon-law-fingerprint:before { content: "\f100"; }
+.flaticon-law-libra:before { content: "\f101"; }
+.flaticon-law-courthouse:before { content: "\f102"; }
+.flaticon-law-gavel:before { content: "\f103"; }
+.flaticon-law-law-book:before { content: "\f104"; }
+.flaticon-law-jury:before { content: "\f105"; }
+.flaticon-law-act:before { content: "\f106"; }
+.flaticon-law-portfolio:before { content: "\f107"; }
+.flaticon-law-writing-tool:before { content: "\f108"; }
+.flaticon-law-lawyer:before { content: "\f109"; }
+.flaticon-law-hourglass:before { content: "\f10a"; }
+.flaticon-law-money-bag:before { content: "\f10b"; }
+.flaticon-law-prison:before { content: "\f10c"; }
+.flaticon-law-police-badge:before { content: "\f10d"; }
+.flaticon-law-lawyer-1:before { content: "\f10e"; }
+.flaticon-law-criminal:before { content: "\f10f"; }
+.flaticon-law-books:before { content: "\f110"; }
+.flaticon-law-police:before { content: "\f111"; }
+.flaticon-law-witness:before { content: "\f112"; }
+.flaticon-law-siren:before { content: "\f113"; }
+.flaticon-law-scroll:before { content: "\f114"; }
+.flaticon-law-handcuffs:before { content: "\f115"; }
+.flaticon-law-police-car:before { content: "\f116"; }
+.flaticon-law-policeman:before { content: "\f117"; }
+.flaticon-law-safebox:before { content: "\f118"; }
+.flaticon-law-prison-1:before { content: "\f119"; }
+.flaticon-law-evidence:before { content: "\f11a"; }
+.flaticon-law-sheriff:before { content: "\f11b"; }
+.flaticon-law-prisoner:before { content: "\f11c"; }
+.flaticon-law-thief:before { content: "\f11d"; }
+.flaticon-law-contract:before { content: "\f11e"; }
+.flaticon-law-crime:before { content: "\f11f"; }
+.flaticon-law-archive:before { content: "\f120"; }
+.flaticon-law-siren-1:before { content: "\f121"; }
+.flaticon-law-judge:before { content: "\f122"; }
+.flaticon-law-judge-1:before { content: "\f123"; }
+.flaticon-law-safebox-1:before { content: "\f124"; }
+.flaticon-law-user:before { content: "\f125"; }
+.flaticon-law-police-hat:before { content: "\f126"; }
+.flaticon-law-sheriff-1:before { content: "\f127"; }
+.flaticon-law-shield:before { content: "\f128"; }
+.flaticon-law-court:before { content: "\f129"; }
+.flaticon-law-court-1:before { content: "\f12a"; }
+.flaticon-law-law:before { content: "\f12b"; }
+.flaticon-law-trial:before { content: "\f12c"; }
+.flaticon-law-law-1:before { content: "\f12d"; }
+.flaticon-law-search:before { content: "\f12e"; }
+.flaticon-law-law-book-1:before { content: "\f12f"; }
+.flaticon-law-police-car-1:before { content: "\f130"; }
+.flaticon-law-gun:before { content: "\f131"; }
+.flaticon-law-policeman-1:before { content: "\f132"; }
+.flaticon-law-judge-2:before { content: "\f133"; }
+.flaticon-law-law-2:before { content: "\f134"; }
+.flaticon-law-thief-1:before { content: "\f135"; }
+.flaticon-law-police-hat-1:before { content: "\f136"; }
+.flaticon-law-quill:before { content: "\f137"; }
+.flaticon-law-judge-3:before { content: "\f138"; }
+.flaticon-law-law-3:before { content: "\f139"; }
+.flaticon-law-trial-1:before { content: "\f13a"; }
+.flaticon-law-clipboard:before { content: "\f13b"; }
+.flaticon-law-handcuffs-1:before { content: "\f13c"; }
+.flaticon-law-judge-4:before { content: "\f13d"; }
+.flaticon-law-judge-5:before { content: "\f13e"; }
+.flaticon-law-judge-6:before { content: "\f13f"; }
+.flaticon-law-search-1:before { content: "\f140"; }
+.flaticon-law-footprint:before { content: "\f141"; }
+.flaticon-law-traffic-cone:before { content: "\f142"; }

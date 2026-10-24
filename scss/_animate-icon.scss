@@ -1,0 +1,502 @@
+
+/*** 
+
+====================================================================
+  Anim Icons
+====================================================================
+
+***/
+  
+.reveal {
+    position: relative;
+    display: inline-flex;
+    visibility: hidden;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform-origin: left;
+    }   
+}
+
+.anim-icons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: calc(var(--container-width) - 30px);
+    margin: 0 auto;
+}
+
+[text-split] {
+    opacity: 0;
+}
+
+.word {
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-bottom: -0.1em;
+    transform-origin: bottom;
+}
+
+.anim-icons.full-width {
+    max-width: 100%;
+}
+
+.anim-icons .icon {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon-firm-house-1 {
+    background-image: url(../images/icons/law-firm.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    height: 99px;
+    position: absolute;
+    right: -50px;
+    width: 158px;
+}
+
+.icon-firm-house-2 {
+    background-image: url(../images/icons/law-pen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 271px;
+    position: absolute;
+    right: -200px;
+    top: -150px;
+    width: 272px;
+}
+
+.icon-wheel-2 {
+    width: 144px;
+    height: 163px;
+    background-image: url(../images/icons/icon-wheel-2.png);
+}
+
+.icon-wheel-3 {
+    width: 149px;
+    height: 147px;
+    background-image: url(../images/icons/icon-wheel-3.png);
+}
+
+.icon-legal-1 {
+    width: 139px;
+    height: 145px;
+    background-image: url(../images/icons/legal.png);
+}
+
+.icon-book-1 {
+    background-image: url(../images/icons/icon-book-1.png);
+    height: 150px;
+    width: 150px;
+}
+
+.icon-big-justice-1 {
+    background-image: url(../images/icons/icon-big-justice-1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: -100px;
+    height: 779px;
+    left: 360px;
+    position: absolute;
+    width: 482px;
+    z-index: 1;
+}
+
+.icon-big-justice {
+    width: 395px;
+    height: 1335px;
+    background-image: url(../images/icons/icon-big-justice.png);
+}
+
+.icon-big-boat-3 {
+    width: 373px;
+    height: 126px;
+    background-image: url(../images/icons/icon-big-boat-3.png);
+}
+
+.icon-big-legal-4 {
+    background-image: url(../images/icons/icon-big-legal-4.png);
+    width: 371px;
+    height: 372px;
+}
+
+.icon-big-legal-5 {
+    background-image: url(../images/icons/icon-big-legal-5.png);
+    height: 608px;
+    width: 368px;
+}
+
+.icon-pattern1 {
+    width: 494px;
+    height: 465px;
+    background-image: url(../images/background/footer1-pattern1.png);
+}
+
+.icon-pattern2 {
+    width: 247px;
+    height: 477px;
+    background-image: url(../images/background/footer1-pattern2.png);
+}
+
+.icon-plane-1{
+    width: 350px;
+    height: 349px;
+    background-image: url(../images/icons/icon-plane-1.png);
+}
+
+.icon-plane-2 {
+    width: 106px;
+    height: 640px;
+    background-image: url(../images/icons/icon-plane-2.png);
+}
+
+.icon-plane-4 {
+    width: 301px;
+    height: 336px;
+    background-image: url(../images/icons/icon-plane-4.png);
+}
+
+.icon-plane-5 {
+    width: 313px;
+    height: 253px;
+    background-image: url(../images/icons/icon-plane-5.png);
+}
+
+.icon-plane-6 {
+    width: 188px;
+    height: 110px;
+    background-image: url(../images/icons/icon-plane-6.png);
+}
+
+.icon-plane-7 {
+    width: 256px;
+    height: 255px;
+    background-image: url(../images/icons/icon-plane-7.png);
+}
+
+.icon-plane-9 {
+    width: 313px;
+    height: 253px;
+    background-image: url(../images/icons/icon-plane-9.png);
+}
+
+.icon-big-arrow {
+    width: 1279px;
+    height: 250px;
+    background-image: url(../images/banner/icon-big-arrow.png);
+}
+
+.icon-arrow {
+    background-image: url(../images/icons/icon-arrow.png);
+    height: 64px;
+    width: 42px;
+}
+
+
+.overlay-1 {
+    background-image: url(../images/icons/overlay-1.png);
+    height: 204px;
+    width: 200px;
+}
+
+.overlay-2 {
+    background-image: url(../images/icons/overlay-2.png);
+    height: 621px;
+    width: 860px;
+}
+
+.overlay-3 {
+    width: 491px;
+    height: 500px;
+    background-image: url(../images/icons/overlay-3.png);
+}
+
+.overlay-4 {
+    width: 1078px;
+    height: 621px;
+    background-image: url(../images/icons/overlay-4.png);
+}
+
+.overlay-5 {
+    width: 379px;
+    height: 297px;
+    background-image: url(../images/icons/overlay-5.png);
+}
+
+.overlay-6 {
+    width: 1706px;
+    height: 780px;
+    background-image: url(../images/icons/overlay-6.png);
+}
+
+.icon-shape {
+    width: 996px;
+    height: 944px;
+    background-image: url(../images/icons/icon-shape.png);
+}
+
+.icon-border-3 {
+    width: 137px;
+    height: 18px;
+    background-image: url(../images/icons/icon-border-3.png);
+}
+
+.icon-quote {
+    width: 92px;
+    height: 66px;
+    background-image: url(../images/icons/icon-quote.png);
+}
+
+.icon-dots {
+    width: 730px;
+    height: 565px;
+    background-image: url(../images/icons/icon-dots.png);
+}
+
+.icon-dots-5 {
+    width: 580px;
+    height: 376px;
+    background-image: url(../images/icons/icon-dots-5.png);
+}
+
+
+.bounce-y{
+    animation: bounce-y 10s infinite linear;
+}
+
+.bounce-x{
+    animation: bounce-x 10s infinite linear;
+}
+
+.zoom-one{
+    animation: zoom-one 10s infinite linear;
+}
+
+.zoom-two{
+    animation: zoom-two 5s infinite linear;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-y {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-x {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoom-one {
+    0% {
+        transform: scale(.95);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(.95);
+    }
+}
+
+@keyframes zoom-two {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.overlay-anim {
+    position: relative;
+    &:after {
+        background: rgba(255, 255, 255, 0.3);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        opacity: 1;
+        z-index: 9;
+        pointer-events: none;
+    }
+    &:hover{
+        &:after {
+            height: 100%;
+            opacity: 0;
+            transition: all 400ms linear;
+        }
+    }   
+}
+
+.overlay-anim-two {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    &:hover {
+        &:after {
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: all 400ms linear;
+        }
+    }
+    &:after {
+        background: rgba(255, 255, 255, .3);
+        bottom: 0;
+        content: "";
+        left: 50%;
+        position: absolute;
+        right: 51%;
+        top: 0;
+        opacity: 1;
+        pointer-events: none;
+        transition: all 300ms linear;
+    }
+}
+
+
+
+// Animated Moving Circles
+
+.circle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    left: -10px;
+    top: -10px;
+    border-radius: 100%;
+    z-index: 1;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        background-color: white;
+        mix-blend-mode: difference;
+    }
+    @include for-md{
+        display: none !important;
+    }
+}
+
+.circle-follow {
+    position: fixed;
+    mix-blend-mode: difference;
+    width: 30px;
+    height: 30px;
+    left: -21px;
+    top: -21px;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        border: 1px solid #fff;
+        mix-blend-mode: difference;
+    }
+    @include for-md {
+        display: none !important;
+    }
+}
+
+
+/* Animate 1 */
+.owl-carousel{
+    .animate-7,
+    .animate-6,
+    .animate-5,
+    .animate-4,
+    .animate-3,
+    .animate-2,
+    .animate-1{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 500ms ease;
+    }
+    .animate-x {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 500ms ease;
+    }
+    
+    .active{
+        .animate-7,
+        .animate-6,
+        .animate-5,
+        .animate-4,
+        .animate-3,
+        .animate-2,
+        .animate-1 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .animate-2 {
+            transition-delay: 300ms;
+        }
+        .animate-3 {
+            transition-delay: 600ms;
+        }
+        .animate-4 {
+            transition-delay: 900ms;
+        }
+        .animate-5 {
+            transition-delay: 1200ms;
+        }
+        .animate-6 {
+            transition-delay: 1500ms;
+        }
+        .animate-7 {
+            transition-delay: 1800ms;
+        }
+    }
+}
+

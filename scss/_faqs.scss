@@ -1,0 +1,117 @@
+/*** 
+
+====================================================================
+    FAQ's Section
+====================================================================
+
+***/
+
+.faq-section {
+	position: relative;
+	padding: 120px 0 70px;
+    .icon-plane-4 {
+        position: absolute;
+        bottom: -140px;
+        left: 20px;
+    }
+    .faq-column{
+        margin-bottom: 50px;
+        .inner-column {
+            position: relative;
+            padding: 60px 0;
+            padding-left: 95px;
+            @include media-breakpoint-down(xl){
+                padding-left: 40px;
+            }
+            @include media-breakpoint-down(sm){
+                padding: 0;
+            }
+            &:before {
+                content: '';
+                @include overlay;
+                width: 315px;
+                height: 100%;
+                border-top: 5px solid var(--theme-color2);
+                border-bottom: 5px solid var(--theme-color2);
+                border-left: 5px solid var(--theme-color2);
+                @include media-breakpoint-down(sm){
+                    display: none;
+                }
+            }
+            .sec-title {
+                .sub-title {
+                    margin-bottom: 5px;
+                }
+                margin-bottom: 20px;
+            }
+        }
+        .accordion-box{
+            max-width: 370px;
+        }
+    }
+
+    .image-column{
+        margin-bottom: 50px;
+        .inner-column {
+            padding-top: 35px;
+            padding-left: 30px;
+            @include media-breakpoint-down(lg){
+                padding: 0;
+                text-align: center;
+            }
+            @include media-breakpoint-down(sm){
+                margin-bottom: 40px;
+            }
+            .image-box {
+                position: relative;
+                .rating-box {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 229px;
+                    height: 100px;
+                    border: 3px solid var(--theme-color1);
+                    background-color: var(--theme-color-light);
+                    text-align: center;
+                    transform: translate(38px, 46px);
+                    @include media-breakpoint-down(lg){
+                        left: 50px;
+                    }
+                    @include media-breakpoint-down(md){
+                        position: relative;
+                        left: 0;
+                        width: 100%;
+                        transform: none;
+                        margin-top: 30px;
+                    }
+                    .icon {
+                        position: absolute;
+                        width: 51px;
+                        height: 51px;
+                        line-height: 51px;
+                        border-radius: 50%;
+                        background: var(--theme-color1);
+                        color: var(--theme-color-light);
+                        font-size: 24px;
+                        text-align: center;
+                        transform: translate(-30px, -31px);
+                    }
+                    .rating{
+                        padding-top: 18px;
+                        li{
+                            display: inline-block;
+                            color: #f9b524;
+                            font-size: 12px;
+                            margin: 0 2px;
+                        }
+                    }
+                    .reviews {
+                        margin-bottom: 0;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
